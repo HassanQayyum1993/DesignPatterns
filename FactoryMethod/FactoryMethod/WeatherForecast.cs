@@ -1,4 +1,4 @@
-namespace FactoryMehod
+namespace FactoryMethod
 {
     public class WeatherForecast
     {

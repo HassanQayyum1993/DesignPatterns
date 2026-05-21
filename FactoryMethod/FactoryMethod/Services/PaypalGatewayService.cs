@@ -1,6 +1,6 @@
 ﻿namespace FactoryMethod.Services
 {
-    public class PaypalGatewayService: IPaymentGatewayService
+    public class PaypalGatewayService : IPaymentGatewayService
     {
         public string Charge()
         {

@@ -2,8 +2,8 @@
 
 namespace FactoryMethod.Services.ServiceFactories
 {
-    public class PayPalGatewayServiceFactory:AbstractPaymentGatewayServiceFactory
+    public class PayPalGatewayServiceFactory : AbstractPaymentGatewayServiceFactory
     {
-        public override IPaymentGatewayService CreatePaymentGateway() => new PaypalGatewayService(); 
+        public override IPaymentGatewayService CreatePaymentGateway() => new PaypalGatewayService();
     }
 }

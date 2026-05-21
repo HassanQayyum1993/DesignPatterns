@@ -19,7 +19,7 @@ namespace FactoryMethod.Controllers
         public IActionResult ProcessPayPalPayment()
         {
             AbstractPaymentGatewayServiceFactory factory = new PayPalGatewayServiceFactory();
-            
+
             return Ok(factory.ProcessPayment());
         }
 

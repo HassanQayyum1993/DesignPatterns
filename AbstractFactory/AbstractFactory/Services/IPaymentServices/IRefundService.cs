@@ -1,6 +1,7 @@
 ﻿namespace AbstractFactory.Services.IPaymentServices
 {
-    public interface IRefundHandlerService
+    public interface IRefundService
     {
+        public void RefundPayment();
     }
 }

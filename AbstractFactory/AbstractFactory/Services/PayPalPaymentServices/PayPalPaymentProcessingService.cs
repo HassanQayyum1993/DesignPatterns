@@ -1,6 +1,12 @@
-﻿namespace AbstractFactory.Services.PayPalPaymentServices
+﻿using AbstractFactory.Services.IPaymentServices;
+
+namespace AbstractFactory.Services.PayPalPaymentServices
 {
-    public class PayPalPaymentProcessingService
+    public class PayPalPaymentProcessingService: IPaymentProcessingService
     {
+        public void ProcessPayment()
+        {
+            Console.WriteLine("PayPal Process Payment");
+        }
     }
 }

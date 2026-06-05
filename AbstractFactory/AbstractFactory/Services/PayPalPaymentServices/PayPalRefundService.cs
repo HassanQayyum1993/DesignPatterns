@@ -1,6 +1,12 @@
-﻿namespace AbstractFactory.Services.PayPalPaymentServices
+﻿using AbstractFactory.Services.IPaymentServices;
+
+namespace AbstractFactory.Services.PayPalPaymentServices
 {
-    public class PayPalRefundService
+    public class PayPalRefundService:IRefundService
     {
+        public void RefundPayment()
+        {
+            Console.WriteLine("PayPal Refund Payment");
+        }
     }
 }

@@ -2,6 +2,6 @@
 {
     public interface IInvoiceGeneratorService
     {
-        public void GenerateInvoice()
+        public void GenerateInvoice();
     }
 }

@@ -3,10 +3,10 @@ using AbstractFactory.Services.PayPalPaymentServices;
 
 namespace AbstractFactory.PaymentFactories
 {
-    public class StripePaymentFactory
+    public class StripePaymentFactory:IPaymentFactory
     {
-        public IPaymentProcessingService CreatePaymentProcessingService() => new StripePaymentProcessingService();
-        public IRefundService CreateRefundService() => new StripeRefundService();
-        public IInvoiceGeneratorService CreateInvoiceGeneratorService() => new StripeInvoiceGeneratorService();
+        public IPaymentProcessingService CreatePaymentProcessingService() => new StripePaymentProcessingService() as IPaymentProcessingService;
+        public IRefundService CreateRefundService() => new StripeRefundService() as IRefundService;
+        public IInvoiceGeneratorService CreateInvoiceGeneratorService() => new StripeInvoiceGeneratorService() as IInvoiceGeneratorService;
     }
 }

@@ -3,8 +3,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AbstractFactory.Controllers
 {
-    public class PaymentController : Controller
+    [ApiController]
+    public class PaymentController : ControllerBase
     {
+        [HttpPost]
+        [Route("Process")]
         public IActionResult ProcessPayment(string paymentMethod)
         {
             IPaymentFactory paymentFactory;
@@ -24,7 +27,7 @@ namespace AbstractFactory.Controllers
             paymentFactory.CreatePaymentProcessingService().ProcessPayment();
             paymentFactory.CreateInvoiceGeneratorService().GenerateInvoice();
 
-            return View();
+            return Ok();
         }
     }
 }

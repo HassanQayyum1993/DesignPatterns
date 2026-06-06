@@ -1,6 +1,8 @@
-﻿namespace AbstractFactory.Services.PayPalPaymentServices
+﻿using AbstractFactory.Services.IPaymentServices;
+
+namespace AbstractFactory.Services.StripePaymentServices
 {
-    public class StripeRefundService
+    public class StripeRefundService:IRefundService
     {
         public void RefundPayment()
         {

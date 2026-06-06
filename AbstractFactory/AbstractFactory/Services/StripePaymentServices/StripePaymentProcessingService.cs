@@ -1,6 +1,8 @@
-﻿namespace AbstractFactory.Services.PayPalPaymentServices
+﻿using AbstractFactory.Services.IPaymentServices;
+
+namespace AbstractFactory.Services.StripePaymentServices
 {
-    public class StripePaymentProcessingService
+    public class StripePaymentProcessingService : IPaymentProcessingService
     {
         public void ProcessPayment()
         {
